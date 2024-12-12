@@ -1,0 +1,14 @@
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\bin\Debug\net8.0\Csharpractice.exe
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\bin\Debug\net8.0\Csharpractice.deps.json
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\bin\Debug\net8.0\Csharpractice.runtimeconfig.json
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\bin\Debug\net8.0\Csharpractice.dll
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\bin\Debug\net8.0\Csharpractice.pdb
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\obj\Debug\net8.0\Csharpractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\obj\Debug\net8.0\Csharpractice.AssemblyInfoInputs.cache
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\obj\Debug\net8.0\Csharpractice.AssemblyInfo.cs
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\obj\Debug\net8.0\Csharpractice.csproj.CoreCompileInputs.cache
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\obj\Debug\net8.0\Csharpractice.dll
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\obj\Debug\net8.0\refint\Csharpractice.dll
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\obj\Debug\net8.0\Csharpractice.pdb
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\obj\Debug\net8.0\Csharpractice.genruntimeconfig.cache
+C:\Maitri\ConsoleApp\Csharpractice\Csharpractice\obj\Debug\net8.0\ref\Csharpractice.dll
