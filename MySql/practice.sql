@@ -90,5 +90,8 @@ Select date_format(Now(),'%y-%m-%d');
 Select dayofweek(curdate());
 
 
-Select * from employees
-where salary > 33000
+ Select * from employees
+where salary > 33000;
+
+
+
