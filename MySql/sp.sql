@@ -25,3 +25,36 @@ DELIMITER ;
 Select * from employees;
 
 #Functions
+
+DELIMITER $$ 
+Create Function get_sum(p_name Varchar(50)) Returns Varchar(50)
+deterministic no sql reads sql DATA
+begin
+ declare v_max Int;
+ declare v_name Varchar(50);
+ Select Max(Salary) into v_max from employees;
+ select  name into v_name from employees
+ where salary = v_max;
+ return v_name;
+ End $$
+ 
+ DELIMITER ;
+ 
+ ##Window function
+ select emp_id,dept,salary ,Sum(salary) over(partition by dept)
+ as sum_salary
+ from employees;
+ 
+ 
+ select emp_id,dept,salary ,Max(salary) over(partition by dept)
+ as sum_salary
+ from employees;
+ 
+ select 
+ Row_number() over(order by salary) as row_no,
+ emp_id,
+ dept,
+ salary  from employees
+
+
+
