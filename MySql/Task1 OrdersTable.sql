@@ -6,7 +6,7 @@ Create Table orders
 order_id INT auto_increment primary key,
 c_name Varchar(50) NOT NULL,
 order_date Datetime,
- enum('Pending','shipped','Deliverd') default 'Pending',
+enum ('Pending','shipped','Deliverd') default 'Pending',
 total_amount decimal(10,2) Default 0,
 discount INT CHECK (discount BETWEEN 0 AND 50),
 shipping_adress  varchar(250) Null
@@ -147,14 +147,14 @@ where order_id =114;
  
  #18
 DELIMITER $$
-CREATE FUNCTION calculate_final_amount(order_id INT)
+CREATE FUNCTION final_amount(order_id INT)
 RETURNS DECIMAL(10, 2)
 DETERMINISTIC
 BEGIN
     DECLARE original_amount DECIMAL(10, 2);
     DECLARE discount_percentage DECIMAL(5, 2);
     DECLARE final_amount DECIMAL(10, 2);
-    SELECT amount, discount
+    SELECT total_amount, discount
     INTO original_amount, discount_percentage
     FROM orders
     WHERE order_id = order_id;
@@ -165,11 +165,11 @@ DELIMITER ;
 
 #19
 DELIMITER $$
-Create Procedure get_status(IN order_status varchar(50))
+Create Procedure get_bystatus(IN order_status varchar(50))
 begin
-Select order_id,total_amount ,discount,Cust_id,Status
-where status = order_status;
+Select order_id,total_amount ,discount,status from orders
+where status = order_status ;
 end$$
 DELIMITER ;
 
-
+Use order_db;

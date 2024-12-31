@@ -71,3 +71,12 @@ Drop table orders;
 #delete cascade
 Delete  from custmores
 where name = "Raju";
+
+Select emp_id, name ,dept,Sum(Salary) from employees
+where dept = "loan"
+group by name ,emp_id ,dept;
+
+use bank_db;
+
+Select dept ,Count(name) from employees
+group by dept
